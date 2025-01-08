@@ -7,7 +7,7 @@ resource "aws_secretsmanager_secret_version" "sversion" {
   secret_id = aws_secretsmanager_secret.yap_DB_secret.id
   secret_string = <<EOF
    {
-    "YapRDSDBPassword": "P@ssW0Rd123"
+    "YapRDSDBPassword": ""
    }
 EOF
 }
